@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Magic She Carries — Luna Morvaine</title>
+<meta name="description" content="Explore Luna Morvaine's five powers: Moonweaving, Echo Listening, Memory Ink, Hearthlight, and Veilwalking." />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="animations.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="haven-atmosphere" aria-hidden="true"></div>
+<div class="haven-stars" aria-hidden="true"></div>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><span class="glyph">☾</span> LUNA MORVAINE</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Haven</a></li>
+      <li><a href="story.html">Story</a></li>
+      <li><a href="powers.html" aria-current="page">Powers</a></li>
+      <li><a href="mission.html">Mission</a></li>
+      <li><a href="help.html">Help</a></li>
+      <li><a class="nav-cta" href="#" id="speak-with-luna" aria-expanded="false">Speak with Luna</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <section class="powers-hero">
+    <div class="container text-center">
+      <span class="eyebrow">Her Abilities</span>
+      <h1>The Magic She Carries</h1>
+      <p class="mx-auto">Five powers, each gentler than it looks. None of them are used to take a choice away from someone — only to make a path more visible.</p>
+    </div>
+  </section>
+
+  <section class="powers-stage-section">
+    <div class="container">
+      <div class="power-stage" id="power-stage">
+        <div class="luna-figure veil-stage">
+          <img id="power-figure-img" src="assets/hero/raisedhand.png" alt="Luna Morvaine demonstrating a power" width="420" height="600" />
+        </div>
+        <div class="power-fx-layer" id="power-fx-layer" aria-hidden="true"></div>
+      </div>
+
+      <div class="power-details glass-panel">
+        <h2 id="power-title">Moonweaving</h2>
+        <p id="power-desc">Luna draws moonlight into fine silver-violet threads, weaving them through the air to reveal paths hidden from ordinary sight.</p>
+      </div>
+
+      <div class="power-buttons" role="group" aria-label="Choose a power to preview">
+        <button class="power-btn active" data-power="moonweaving" aria-pressed="true">
+          <span class="power-btn-icon" aria-hidden="true">✦</span> Moonweaving
+        </button>
+        <button class="power-btn" data-power="echo" aria-pressed="false">
+          <span class="power-btn-icon" aria-hidden="true">◐</span> Echo Listening
+        </button>
+        <button class="power-btn" data-power="memoryink" aria-pressed="false">
+          <span class="power-btn-icon" aria-hidden="true">ᚠ</span> Memory Ink
+        </button>
+        <button class="power-btn" data-power="hearthlight" aria-pressed="false">
+          <span class="power-btn-icon" aria-hidden="true">✧</span> Hearthlight
+        </button>
+        <button class="power-btn" data-power="veilwalking" aria-pressed="false">
+          <span class="power-btn-icon" aria-hidden="true">☾</span> Veilwalking
+        </button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand">☾ LUNA MORVAINE</span>
+        <p>The Moonlit Haven exists between worlds — a place to be heard, not judged.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="story.html">Story</a></li>
+            <li><a href="powers.html">Powers</a></li>
+            <li><a href="mission.html">Mission</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="help.html#faq">FAQ</a></li>
+            <li><a href="#" id="footer-speak-btn">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> The Moonlit Haven. An original fictional portal.</span>
+      <span>Built for the internship machine test.</span>
+    </div>
+  </div>
+</footer>
+
+<div id="luna-chat-overlay" class="chat-overlay" hidden>
+  <div class="chat-panel glass-panel" id="luna-chat-panel" role="dialog" aria-label="Conversation with Luna Morvaine" aria-modal="false">
+    <div class="chat-header">
+      <div class="chat-avatar"><img src="assets/hero/idle.png" alt="" aria-hidden="true" /></div>
+      <div class="chat-header-text"><strong>Luna Morvaine</strong><span>The Moonlit Haven</span></div>
+      <button class="chat-close" id="luna-chat-close" aria-label="Minimize conversation">–</button>
+    </div>
+    <div class="chat-messages" id="luna-chat-messages" role="log" aria-live="polite"></div>
+    <div class="typing-indicator" id="luna-typing-indicator" hidden aria-hidden="true">
+      <span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span>
+    </div>
+    <form class="chat-input-row" id="luna-chat-form">
+      <label for="luna-chat-input" class="visually-hidden">Your message to Luna</label>
+      <input type="text" id="luna-chat-input" placeholder="Type your reply..." autocomplete="off" />
+      <button type="submit" id="luna-chat-send" class="btn btn-primary chat-send-btn" aria-label="Send message">Send</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script src="chatbot.js"></script>
+<script src="powers.js"></script>
+<script>
+  document.getElementById('footer-speak-btn').addEventListener('click', (e) => { e.preventDefault(); window.LunaChat.open(); });
+</script>
+</body>
+</html>

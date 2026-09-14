@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — The Moonlit Haven</title>
+<meta name="description" content="Privacy Policy for the Moonlit Haven help portal." />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="animations.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="haven-atmosphere" aria-hidden="true"></div>
+<div class="haven-stars" aria-hidden="true"></div>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><span class="glyph">☾</span> LUNA MORVAINE</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Haven</a></li>
+      <li><a href="story.html">Story</a></li>
+      <li><a href="powers.html">Powers</a></li>
+      <li><a href="mission.html">Mission</a></li>
+      <li><a href="help.html">Help</a></li>
+      <li><a class="nav-cta" href="#" id="speak-with-luna" aria-expanded="false">Speak with Luna</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <section class="legal-section">
+    <div class="container legal-container">
+      <span class="eyebrow">Legal</span>
+      <h1>Privacy Policy</h1>
+      <p class="legal-updated">Last updated: <span data-year>2026</span>. Placeholder document for a fictional student/portfolio project.</p>
+
+      <div class="glass-panel legal-body">
+        <h2>1. Overview</h2>
+        <p>The Moonlit Haven ("the portal") is a fictional help-portal project built around the original character Luna Morvaine. This policy explains what information the portal collects through its conversational interface, and how that information is used.</p>
+
+        <h2>2. Information We Collect</h2>
+        <p>When you speak with Luna, the portal collects the following information that you provide directly:</p>
+        <ul>
+          <li>Your name</li>
+          <li>Your age</li>
+          <li>Your location</li>
+          <li>Your email address</li>
+          <li>The grievance or request you describe</li>
+          <li>The date and time of your submission</li>
+        </ul>
+        <p>No other personal information is collected automatically by this project beyond what is described above. [Placeholder: list any analytics, cookies, or logging tools actually implemented, if any.]</p>
+
+        <h2>3. Why We Collect This Information</h2>
+        <p>Information is collected solely to process and respond to the request you submit through the portal. Your name, age, and location provide context for your message; your email allows a response to be sent back to you; and the date and time are recorded for reference.</p>
+
+        <h2>4. How Information Is Used</h2>
+        <p>Submitted information is sent to the portal's backend, where it triggers an email notification to the portal operator. It is not sold, rented, or shared with unrelated third parties, and it is not used for advertising.</p>
+
+        <h2>5. Data Storage and Security</h2>
+        <p>[Placeholder: describe actual storage — e.g. information is transmitted via email and is not stored in a database, or describe your database and retention practice if one is implemented.] Reasonable care is taken to protect submitted information, but no method of transmission over the internet is guaranteed to be completely secure.</p>
+
+        <h2>6. Compliance</h2>
+        <p>This project does not claim compliance with GDPR, HIPAA, CCPA, or any other specific data protection regulation. It is a demonstration/portfolio project. Anyone deploying this portal for real-world use should implement and verify appropriate compliance measures for their jurisdiction before collecting real user data.</p>
+
+        <h2>7. Your Choices</h2>
+        <p>You may choose not to share certain information, though doing so may limit Luna's ability to respond to your request. You may contact the portal operator using the details on the <a href="help.html">Help</a> page to ask about, correct, or request deletion of information you've submitted.</p>
+
+        <h2>8. Changes to This Policy</h2>
+        <p>This policy may be updated as the project evolves. Continued use of the portal after changes are posted constitutes acceptance of the revised policy.</p>
+
+        <h2>9. Contact</h2>
+        <p>[Placeholder: contact email or method for privacy-related questions.]</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand">☾ LUNA MORVAINE</span>
+        <p>The Moonlit Haven exists between worlds — a place to be heard, not judged.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="story.html">Story</a></li>
+            <li><a href="powers.html">Powers</a></li>
+            <li><a href="mission.html">Mission</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="help.html#faq">FAQ</a></li>
+            <li><a href="#" id="footer-speak-btn">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html" aria-current="page">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> The Moonlit Haven. An original fictional portal.</span>
+      <span>Built for the internship machine test.</span>
+    </div>
+  </div>
+</footer>
+
+<div id="luna-chat-overlay" class="chat-overlay" hidden>
+  <div class="chat-panel glass-panel" id="luna-chat-panel" role="dialog" aria-label="Conversation with Luna Morvaine" aria-modal="false">
+    <div class="chat-header">
+      <div class="chat-avatar"><img src="assets/hero/idle.png" alt="" aria-hidden="true" /></div>
+      <div class="chat-header-text"><strong>Luna Morvaine</strong><span>The Moonlit Haven</span></div>
+      <button class="chat-close" id="luna-chat-close" aria-label="Minimize conversation">–</button>
+    </div>
+    <div class="chat-messages" id="luna-chat-messages" role="log" aria-live="polite"></div>
+    <div class="typing-indicator" id="luna-typing-indicator" hidden aria-hidden="true">
+      <span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span>
+    </div>
+    <form class="chat-input-row" id="luna-chat-form">
+      <label for="luna-chat-input" class="visually-hidden">Your message to Luna</label>
+      <input type="text" id="luna-chat-input" placeholder="Type your reply..." autocomplete="off" />
+      <button type="submit" id="luna-chat-send" class="btn btn-primary chat-send-btn" aria-label="Send message">Send</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script src="chatbot.js"></script>
+<script>
+  document.getElementById('footer-speak-btn').addEventListener('click', (e) => { e.preventDefault(); window.LunaChat.open(); });
+</script>
+</body>
+</html>

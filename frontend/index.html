@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Moonlit Haven — Luna Morvaine</title>
+<meta name="description" content="Enter the Moonlit Haven and speak with Luna Morvaine, a witch who listens to the stories others turn away from." />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="animations.css" />
+</head>
+<body data-auto-open-chat="true">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="haven-atmosphere" aria-hidden="true"></div>
+<div class="haven-stars" aria-hidden="true"></div>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><span class="glyph">☾</span> LUNA MORVAINE</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html" aria-current="page">Haven</a></li>
+      <li><a href="story.html">Story</a></li>
+      <li><a href="powers.html">Powers</a></li>
+      <li><a href="mission.html">Mission</a></li>
+      <li><a href="help.html">Help</a></li>
+      <li><a class="nav-cta" href="#" id="speak-with-luna" aria-expanded="false">Speak with Luna</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO / APPARITION ============ -->
+  <section class="hero-section" aria-label="The Moonlit Haven entrance">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">The Moonlit Haven</span>
+        <h1>A door between worlds, always answered.</h1>
+        <p>Some places aren't found on any map. They're found when you need somewhere to be heard. This is one of them.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" id="hero-speak-btn">Speak with Luna</button>
+          <a class="btn btn-ghost" href="story.html">Read her story</a>
+        </div>
+      </div>
+
+      <div class="hero-figure-wrap" data-drift-particles="16">
+        <div class="hero-window" aria-hidden="true"></div>
+        <div class="luna-figure veil-stage">
+          <img src="assets/hero/idle.png" alt="Luna Morvaine, a witch cloaked in black and violet, standing calmly with her hands loosely at her sides" width="440" height="620" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INTRO STRIP ============ -->
+  <section class="intro-strip">
+    <div class="container intro-grid">
+      <div class="glass-panel intro-card">
+        <h3>Born beneath a black moon</h3>
+        <p>Luna has always heard what people don't say aloud — the fear behind confidence, the ache behind a smile.</p>
+      </div>
+      <div class="glass-panel intro-card">
+        <h3>A sanctuary, not a service</h3>
+        <p>The Moonlit Haven sits between the ordinary world and the magical one. No one is turned away at its door.</p>
+      </div>
+      <div class="glass-panel intro-card">
+        <h3>Her vow</h3>
+        <p>"No voice that reaches my door shall disappear unheard." It is the reason the Haven exists at all.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT HAPPENS NEXT ============ -->
+  <section class="path-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Before you continue</span>
+        <h2>What it means to visit the Haven</h2>
+        <p>Luna will ask a few things — your name, your age, where you are, how to reach you, and what brought you here. Nothing more.</p>
+      </div>
+      <div class="path-links">
+        <a class="path-link" href="story.html">
+          <h3>Her Story</h3>
+          <p>Where the Haven came from, and why Luna built it.</p>
+        </a>
+        <a class="path-link" href="powers.html">
+          <h3>Her Magic</h3>
+          <p>Five powers, each shaped by the same intention: to help without overtaking.</p>
+        </a>
+        <a class="path-link" href="mission.html">
+          <h3>Her Mission</h3>
+          <p>Why Luna listens instead of intervening.</p>
+        </a>
+        <a class="path-link" href="help.html">
+          <h3>Get Help</h3>
+          <p>How the portal works, step by step.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand">☾ LUNA MORVAINE</span>
+        <p>The Moonlit Haven exists between worlds — a place to be heard, not judged.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="story.html">Story</a></li>
+            <li><a href="powers.html">Powers</a></li>
+            <li><a href="mission.html">Mission</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="help.html#faq">FAQ</a></li>
+            <li><a href="#" id="footer-speak-btn">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> The Moonlit Haven. An original fictional portal.</span>
+      <span>Built for the internship machine test.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ CHAT OVERLAY ============ -->
+<div id="luna-chat-overlay" class="chat-overlay" hidden>
+  <div class="chat-panel glass-panel" id="luna-chat-panel" role="dialog" aria-label="Conversation with Luna Morvaine" aria-modal="false">
+    <div class="chat-header">
+      <div class="chat-avatar">
+        <img src="assets/hero/idle.png" alt="" aria-hidden="true" />
+      </div>
+      <div class="chat-header-text">
+        <strong>Luna Morvaine</strong>
+        <span>The Moonlit Haven</span>
+      </div>
+      <button class="chat-close" id="luna-chat-close" aria-label="Minimize conversation">–</button>
+    </div>
+
+    <div class="chat-messages" id="luna-chat-messages" role="log" aria-live="polite"></div>
+
+    <div class="typing-indicator" id="luna-typing-indicator" hidden aria-hidden="true">
+      <span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span>
+    </div>
+
+    <form class="chat-input-row" id="luna-chat-form">
+      <label for="luna-chat-input" class="visually-hidden">Your message to Luna</label>
+      <input type="text" id="luna-chat-input" placeholder="Type your reply..." autocomplete="off" />
+      <button type="submit" id="luna-chat-send" class="btn btn-primary chat-send-btn" aria-label="Send message">Send</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script src="chatbot.js"></script>
+<script>
+  document.getElementById('hero-speak-btn').addEventListener('click', () => window.LunaChat.open());
+  document.getElementById('footer-speak-btn').addEventListener('click', (e) => { e.preventDefault(); window.LunaChat.open(); });
+</script>
+</body>
+</html>

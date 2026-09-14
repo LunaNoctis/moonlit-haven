@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Terms &amp; Conditions — The Moonlit Haven</title>
+<meta name="description" content="Terms and Conditions for the Moonlit Haven help portal." />
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="animations.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="haven-atmosphere" aria-hidden="true"></div>
+<div class="haven-stars" aria-hidden="true"></div>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><span class="glyph">☾</span> LUNA MORVAINE</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Haven</a></li>
+      <li><a href="story.html">Story</a></li>
+      <li><a href="powers.html">Powers</a></li>
+      <li><a href="mission.html">Mission</a></li>
+      <li><a href="help.html">Help</a></li>
+      <li><a class="nav-cta" href="#" id="speak-with-luna" aria-expanded="false">Speak with Luna</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <section class="legal-section">
+    <div class="container legal-container">
+      <span class="eyebrow">Legal</span>
+      <h1>Terms &amp; Conditions</h1>
+      <p class="legal-updated">Last updated: <span data-year>2026</span>. Placeholder document for a fictional student/portfolio project.</p>
+
+      <div class="glass-panel legal-body">
+        <h2>1. Acceptance of Terms</h2>
+        <p>By using the Moonlit Haven portal ("the portal"), you agree to these Terms &amp; Conditions. If you do not agree, please do not use the portal.</p>
+
+        <h2>2. About This Project</h2>
+        <p>The Moonlit Haven is a fictional creative and technical project built around an original character, Luna Morvaine, for demonstration purposes. It is not a real crisis service, legal service, medical service, or professional counseling service, and nothing on this portal should be treated as such.</p>
+
+        <h2>3. Use of the Portal</h2>
+        <p>You may use the portal to explore its content and, if you choose, submit a message through the conversational interface. You agree to provide information that is accurate to the best of your knowledge when submitting a request.</p>
+
+        <h2>4. User-Submitted Information</h2>
+        <p>Any name, age, location, email address, or message you submit through the portal is provided voluntarily. By submitting this information, you consent to its use as described in the <a href="privacy.html">Privacy Policy</a>.</p>
+
+        <h2>5. Appropriate Use</h2>
+        <p>You agree not to use the portal to submit unlawful, abusive, or harmful content, to attempt to disrupt or compromise the portal's systems, or to misrepresent your identity for malicious purposes.</p>
+
+        <h2>6. No Guarantee of Response</h2>
+        <p>While the portal is designed to notify an operator when a request is submitted, no guarantee is made regarding response time or outcome. [Placeholder: adjust based on actual operational commitments, if any.]</p>
+
+        <h2>7. Limitations</h2>
+        <p>The portal is provided "as is," without warranties of any kind, express or implied. The creators of this project are not liable for any damages arising from use of, or inability to use, the portal.</p>
+
+        <h2>8. Changes to the Service</h2>
+        <p>This project may be modified, updated, or discontinued at any time without notice. These Terms may also be revised; continued use after changes constitutes acceptance of the updated Terms.</p>
+
+        <h2>9. Contact Information</h2>
+        <p>[Placeholder: contact email or method for questions about these Terms.]</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand">☾ LUNA MORVAINE</span>
+        <p>The Moonlit Haven exists between worlds — a place to be heard, not judged.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="story.html">Story</a></li>
+            <li><a href="powers.html">Powers</a></li>
+            <li><a href="mission.html">Mission</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="help.html#faq">FAQ</a></li>
+            <li><a href="#" id="footer-speak-btn">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html" aria-current="page">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> The Moonlit Haven. An original fictional portal.</span>
+      <span>Built for the internship machine test.</span>
+    </div>
+  </div>
+</footer>
+
+<div id="luna-chat-overlay" class="chat-overlay" hidden>
+  <div class="chat-panel glass-panel" id="luna-chat-panel" role="dialog" aria-label="Conversation with Luna Morvaine" aria-modal="false">
+    <div class="chat-header">
+      <div class="chat-avatar"><img src="assets/hero/idle.png" alt="" aria-hidden="true" /></div>
+      <div class="chat-header-text"><strong>Luna Morvaine</strong><span>The Moonlit Haven</span></div>
+      <button class="chat-close" id="luna-chat-close" aria-label="Minimize conversation">–</button>
+    </div>
+    <div class="chat-messages" id="luna-chat-messages" role="log" aria-live="polite"></div>
+    <div class="typing-indicator" id="luna-typing-indicator" hidden aria-hidden="true">
+      <span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span>
+    </div>
+    <form class="chat-input-row" id="luna-chat-form">
+      <label for="luna-chat-input" class="visually-hidden">Your message to Luna</label>
+      <input type="text" id="luna-chat-input" placeholder="Type your reply..." autocomplete="off" />
+      <button type="submit" id="luna-chat-send" class="btn btn-primary chat-send-btn" aria-label="Send message">Send</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script src="chatbot.js"></script>
+<script>
+  document.getElementById('footer-speak-btn').addEventListener('click', (e) => { e.preventDefault(); window.LunaChat.open(); });
+</script>
+</body>
+</html>
